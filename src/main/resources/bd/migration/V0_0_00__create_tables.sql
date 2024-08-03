@@ -1,0 +1,38 @@
+-- CREATE TABLE public.user
+-- (
+--     id   bigserial NOT NULL,
+--     name character varying,
+--     PRIMARY KEY (id)
+-- );
+--
+-- CREATE TABLE public.event
+-- (
+--     id      bigserial NOT NULL,
+--     user_id bigserial,
+--     PRIMARY KEY (id),
+--     constraint fk_user foreign key (user_id) references public.user (id)
+-- );
+--
+-- CREATE TABLE public.file
+-- (
+--     id      bigserial NOT NULL,
+--     event_id bigserial,
+--     name varchar,
+--     file_path varchar,
+--     PRIMARY KEY (id),
+--     constraint fk_event foreign key (event_id) references public.event (id)
+-- );
+
+
+
+-- CREATE TABLE contacts(
+--                          contact_id INT GENERATED ALWAYS AS IDENTITY,
+--                          customer_id INT,
+--                          contact_name VARCHAR(255) NOT NULL,
+--                          phone VARCHAR(15),
+--                          email VARCHAR(100),
+--                          PRIMARY KEY(contact_id),
+--                          CONSTRAINT fk_customer
+--                              FOREIGN KEY(customer_id)
+--                                  REFERENCES customers(customer_id)
+-- );
